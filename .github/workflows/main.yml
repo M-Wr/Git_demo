@@ -6,8 +6,10 @@ jobs:
   actions_demo:
     runs-on: ubuntu-latest 
     steps: 
-    - run: echo "Hello, World!"
     - run: touch file.txt
+    - run: cat file.txt
+    - run: sleep 10
+    - run: echo "Hello, World!"
     - run: echo "this is text!" >> file.txt
     - run: cat file.txt
     - run: ls -a
